@@ -1,0 +1,29 @@
+Readme for CMPSCI 4760 Assignment 5
+
+Author : Scott Tabaka
+Date Due : 4/15/2020
+Course : CMPSCI 4760
+Purpose : This program simulates operating system resource management by allocating/deallocating resources, checks
+           for deadlocks using a deadlock detection algorithm and resolves the deadlock by terminating the process
+           with the most total allocated resources.
+
+************Instructions**********
+1. To compile: make
+2. To run:  oss     (run program)
+            oss -h  (display help message)
+            oss -v  (run in verbose mode) -- Vebose mode prints more to the log file than just when a deadlock is
+                    detected.  It displays each request, allocation, deallocation, and resource tables every 20
+                    requests.
+3. To clean up: make clean
+
+************Output****************
+logfile.log
+
+
+********Other details**********
+Deadlock resolution: When a deadlock is detected this program will calculate which process is holding the most
+                    total allocated resources.  It will then terminate that process if no other terminations are
+                    in progress.
+Probability for a child process to terminate: 5%
+Total Processes allowed to run: 200
+Timeout limit: 7 seconds
